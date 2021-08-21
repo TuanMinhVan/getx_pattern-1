@@ -93,7 +93,7 @@ class LibraryView extends GetView<LibraryController> {
                 return ItemLibrary(
                   shortContent: controller.listLibrary[index].shortContent,
                   image: controller.listLibrary[index].image,
-                  textSearch: controller.textSearch.value,
+                  textSearch: controller.textController.value.text,
                 );
               },
             );

@@ -4,7 +4,6 @@ import 'package:training/app/cores/models/library_model.dart';
 
 class LibraryController extends GetxController {
   Rx<TextEditingController> textController = TextEditingController().obs;
-  RxString textSearch = ''.obs;
   RxList<LibraryModel> listLibrary = RxList();
   var listTmp = <LibraryModel>[];
 
@@ -59,13 +58,11 @@ class LibraryController extends GetxController {
 
   void onSearchChanged(String value) {
     print('search value: $value');
-    textSearch.value = value;
     onFilter(value);
   }
 
   void onRemoveSearch() {
     textController.value.text = '';
-    textSearch.value = '';
     onFilter('');
   }
 }
