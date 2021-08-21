@@ -1,0 +1,7 @@
+flutter_application_id:
+  android:
+    id: "com.training.demo"
+    name: "Training"
+  ios:
+    id: "com.training.demo"
+    name: "Training"
